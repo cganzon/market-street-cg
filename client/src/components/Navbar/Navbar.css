@@ -1,0 +1,42 @@
+nav {
+    background-color: rgb(56, 56, 63);
+    height: 80px;
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-areas: "title . search";
+}
+
+#navbar-title {
+    grid-area: title;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin: auto;
+}
+
+#user-interface {
+    grid-area: search;
+    display: grid;
+    grid-template-rows: "1fr 1fr";
+    grid-template-areas: 
+        "login"
+        "search-field"
+}
+
+#login {
+    grid-area: login;
+    display: block;
+    align-self: end;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#login:hover {
+    text-decoration: underline;
+}
+
+#search-form {
+    grid-area: search-field;
+    margin-bottom: 5px;
+}
